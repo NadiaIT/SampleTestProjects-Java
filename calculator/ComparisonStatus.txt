@@ -1,0 +1,34 @@
+Mismatched Semantics Classes:
+	Caculator
+Mismatched Syntax Classes:
+	Command
+	Calculator
+Mismatched Semantics Methods:
+	BInaryOperation:executeBinary
+	Cpu:doNotify
+	Cpu:findOperation
+	Cpu:initializeStates
+	Cpu:setState
+	DecimalValue:substract
+	MemoryOperation:executeMemory
+	OperandStack:op
+	State:enterDigit
+	State:enterOperation
+	State:enterValue
+	UnaryOperation:executeUnary
+Mismatched Syntax Methods:
+	DecimalValue:subtract
+	Value:create
+	Value:add
+	Value:subtract
+	Value:multiply
+	Value:divide
+	Value:negate
+	Value:squareRoot
+	Value:inverse
+	Value:percent
+	Value:addDigit
+	CalculatorFrame:keyTyped
+	CalculatorFrame:keyPressed
+	KeyPanel:actionPerformed
+	NumberPanel:actionPerformed

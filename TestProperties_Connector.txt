@@ -1,0 +1,5 @@
+projectPath = C:\Users\NahaR\workspace\ConnectFour
+xmlPath =  
+testPackage = org.java.test
+compareClasses = false
+compareMethods = false

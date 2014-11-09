@@ -1,0 +1,5 @@
+projectPath = C:\Users\NahaR\workspace\calculator
+xmlPath = C:\Users\NahaR\workspace\calculator\xmls
+testPackage = org.java.test
+compareClasses = true
+compareMethods = true

@@ -1,0 +1,67 @@
+Time Elapsed = 0.549 seconds
+Date = 2014/10/15 21:53:26
+Project = JavaProject
+Unit Test:
+	15 class(es) created
+		AlarmTest
+		CheckerTest
+		MainClassTest
+		MonthlyCalTest
+		NimbusTest
+		RemOrCalndrTest
+		SetReminderTest
+		ViewCalenderTest
+		DatabaseManagerTest
+		ReminderDAOTest
+		ReminderEntityTest
+		CalcuTest
+		CalculateTest
+		ProjectTest
+		ReminderTest
+	43 test method(s) created
+		getAlarmTest
+		reminderFrameTest
+		remButtonsTest
+		actionPerformedTest
+		checkTest
+		getDateTest
+		printTest
+		actionPerformedTest
+		looksTest
+		actionPerformedTest
+		reminderFrameTest
+		addReminderTest
+		actionPerformedTest
+		addComponentsTest
+		actionPerformedTest
+		executeUpdateTest
+		executeQueryTest
+		closeConnectionTest
+		insertTest
+		deleteTest
+		updateTest
+		getTest
+		getDateTest
+		setDateTest
+		getMonthTest
+		setMonthTest
+		getYearTest
+		setYearTest
+		getOccationTest
+		setOccationTest
+		initComponentTest
+		actionPerformedTest
+		addTest
+		substractTest
+		multipleTest
+		divisionTest
+		modTest
+		sqrrtTest
+		sqrTest
+		invrseTest
+		initComponentsTest
+		addComponentsTest
+		actionPerformedTest
+Integration Test:
+	0 class(es) created
+	0 test method(s) created

@@ -1,0 +1,79 @@
+***Syntax Start***
+Class HopelessSyntaxClass
+Class Observer
+	Methods:
+		update
+Class ObserverPatternMain
+Class Person [String personName]
+	Methods:
+		getPersonName
+		setPersonName
+		update
+		unUsedMethod
+Class Product [String productName, String productType, String availability]
+	Methods:
+		notifyObservers
+		registerObserver
+		removeObserver
+		getObservers
+		setObservers
+		getProductName
+		setProductName
+		getProductType
+		setProductType
+		getAvailability
+		setAvailability
+Class Subject
+	Methods:
+		registerObserver
+		removeObserver
+		notifyObservers
+***Syntax End***
+***Semantics Start***
+**Class Diagrams**
+Class ObserverPatternMain
+	Methods:
+		main
+Class Person
+	Variables:
+		personName
+	Methods:
+		getPersonName
+		setPersonName
+		update
+Class ExtraSemanticClass
+	Variables:
+		var1
+	Methods:
+		getvar1
+		setvar1
+		update
+Class Product
+	Variables:
+		observers
+		personName
+		productType
+		availability
+	Methods:
+		notifyObservers
+		registerObserver
+		removeObserver
+		getObservers
+		setObservers
+**State Diagrams**
+Product
+Nodes: |Idle| |Notify Observer| |Register Observer| |Remove Observer| |Set Availability| 
+ s:Idle <-Register-> d:Register Observer
+ s:Idle <-Remove Observer-> d:Remove Observer
+ d:Idle s:Notify Observer <-Done->
+ d:Idle s:Remove Observer <-State Changed->
+ d:Notify Observer s:Set Availability <-Done->
+ s:Register Observer <-Notify All-> d:Set Availability
+**Sequence Diagrams**
+Notification
+Actors: |ObserverPatternMain| |Person| |Product| 
+ s:ObserverPatternMain <-SetAvailability-> d:Product
+ s:Product <-Notify-> d:Product
+ d:Person s:Product <-Update->
+ s:Person <-GetAvailability-> d:Product
+***Semantics End***

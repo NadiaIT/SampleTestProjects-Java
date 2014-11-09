@@ -1,0 +1,5 @@
+projectPath = C:\Users\NahaR\workspace\ObserverDesignPatternExample
+xmlPath = F:\Codes\ResearchCode_SSTF\xmls
+testPackage = org.java.test
+compareClasses = true
+compareMethods = false

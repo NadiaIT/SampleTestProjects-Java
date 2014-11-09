@@ -1,0 +1,6 @@
+Mismatched Semantics Classes:
+	ExtraSemanticClass
+Mismatched Syntax Classes:
+	HopelessSyntaxClass
+	Observer
+	Subject

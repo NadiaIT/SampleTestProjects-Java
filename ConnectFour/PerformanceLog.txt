@@ -1,0 +1,48 @@
+Time Elapsed = 0.605 seconds
+Date = 2014/10/15 22:21:10
+Project = ConnectFour
+Unit Test:
+	9 class(es) created
+		AggressivePlayerTest
+		ConnectFourTest
+		DefensivePlayerTest
+		HumanPlayerTest
+		MinMaxPlayerTest
+		RandomPlayerTest
+		RunTest
+		SimpleBoardTest
+		StateTest
+	30 test method(s) created
+		setMoveTest
+		getTypeTest
+		goTest
+		setMoveTest
+		getTypeTest
+		goTest
+		setMoveTest
+		getTypeTest
+		goTest
+		TerminalTestTest
+		UtilityTest
+		getTypeTest
+		goTest
+		setMoveTest
+		display_treeTest
+		setMoveTest
+		getTypeTest
+		goTest
+		createMenuBarTest
+		actionPerformedTest
+		itemStateChangedTest
+		ParseMoveTest
+		MoveTest
+		viewTest
+		viewcolTest
+		clearTest
+		nextTest
+		ret_colTest
+		overTest
+		toStringTest
+Integration Test:
+	0 class(es) created
+	0 test method(s) created

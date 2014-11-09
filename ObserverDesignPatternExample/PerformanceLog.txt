@@ -1,0 +1,29 @@
+Time Elapsed = 0.677 seconds
+Date = 2014/10/17 14:18:31
+Project = ObserverDesignPatternExample
+Unit Test:
+	3 class(es) created
+		ObserverPatternMainTest
+		PersonTest
+		ProductTest
+	15 test method(s) created
+		getPersonNameTest
+		setPersonNameTest
+		updateTest
+		unUsedMethodTest
+		notifyObserversTest
+		registerObserverTest
+		removeObserverTest
+		getObserversTest
+		setObserversTest
+		getProductNameTest
+		setProductNameTest
+		getProductTypeTest
+		setProductTypeTest
+		getAvailabilityTest
+		setAvailabilityTest
+Integration Test:
+	1 class(es) created
+		NotificationTest
+	1 test method(s) created
+		NotificationTest

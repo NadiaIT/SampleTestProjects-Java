@@ -1,0 +1,5 @@
+projectPath = C:\Users\NahaR\workspace\JavaProject
+xmlPath = C:\Users\NahaR\workspace\JavaProject\xmls
+testPackage = org.java.test
+compareClasses = false
+compareMethods = false

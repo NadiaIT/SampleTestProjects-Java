@@ -1,0 +1,447 @@
+***Syntax Start***
+Class BinaryOperation
+	Methods:
+		execute
+Class Clear
+	Methods:
+		execute
+Class Command
+	Methods:
+		execute
+		display
+Class Cpu
+	Methods:
+		enterOperation
+		enterDigit
+		pushDisplayRegister
+		loadOperand
+		pushOperation
+		executeOperation
+		replaceOperation
+		equals
+		updateDisplay
+		clear
+		reset
+		addDisplayObserver
+		addMemoryObserver
+		setUpdateDisplay
+		getOperandStack
+		getOperationStack
+		getMemoryRegister
+		getDisplayRegister
+Class DecimalValue [double value]
+	Methods:
+		create
+		add
+		subtract
+		multiply
+		divide
+		squareRoot
+		inverse
+		negate
+		percent
+		addDigit
+		toString
+Class Display [Value value]
+	Methods:
+		addDigit
+		setValue
+		createValue
+		clear
+		reset
+Class Divide
+	Methods:
+		executeBinary
+Class EnteringNumberState [Cpu cpu]
+	Methods:
+		enterDigit
+		enterOperation
+		enterValue
+Class Equals
+	Methods:
+		execute
+Class Inverse
+	Methods:
+		executeUnary
+Class Memory [Value value]
+	Methods:
+		setValue
+		clear
+Class MemoryClear
+	Methods:
+		executeMemory
+Class MemoryMinus
+	Methods:
+		executeMemory
+Class MemoryOperation
+	Methods:
+		execute
+Class MemoryPlus
+	Methods:
+		executeMemory
+Class MemoryRecall
+	Methods:
+		executeMemory
+Class Minus
+	Methods:
+		executeBinary
+Class Multiply
+	Methods:
+		executeBinary
+Class OperandCommand [Value value]
+	Methods:
+		execute
+		display
+Class OperandStack
+	Methods:
+		pop
+		push
+		peek
+		empty
+		clear
+Class Operation
+	Methods:
+		getPrecedence
+		getLookahead
+		toString
+		setString
+Class OperationCommand [Operation op]
+	Methods:
+		execute
+		display
+Class OperationStack
+	Methods:
+		push
+		pop
+		empty
+		clear
+		peek
+Class Percent
+	Methods:
+		execute
+Class Plus
+	Methods:
+		executeBinary
+Class Register [Value value]
+	Methods:
+		getValue
+		setValue
+		setValue
+		clear
+		reset
+Class ReverseSign
+	Methods:
+		executeUnary
+Class Square
+	Methods:
+		executeUnary
+Class SquareRoot
+	Methods:
+		executeUnary
+Class State [Cpu cpu]
+Class UnaryOperation
+	Methods:
+		execute
+Class Value
+	Methods:
+		create
+		add
+		subtract
+		multiply
+		divide
+		negate
+		squareRoot
+		inverse
+		percent
+		addDigit
+Class WaitingForInputState [Cpu cpu]
+	Methods:
+		enterDigit
+		enterOperation
+		enterValue
+Class WaitingForNumberState [Cpu cpu]
+	Methods:
+		enterDigit
+		enterOperation
+		enterValue
+Class WaitingForOperationState [Cpu cpu]
+	Methods:
+		enterDigit
+		enterOperation
+		enterValue
+Class Calculator
+	Methods:
+		enterOperation
+		enterDigit
+		addDisplayObserver
+		addMemoryObserver
+Class CalculatorFrame [Calculator calculator]
+	Methods:
+		keyTyped
+		keyPressed
+Class CalculatorTape [Cpu cpu]
+	Methods:
+		update
+Class DisplayPanel
+	Methods:
+		getMemoryStatus
+		setDisplay
+		update
+Class FunctionPanel [Calculator calculator]
+Class KeyPanel [Calculator calculator]
+	Methods:
+		getOperationHandler
+		actionPerformed
+Class MemoryStatus
+	Methods:
+		update
+Class NumberPanel [Calculator calculator]
+	Methods:
+		actionPerformed
+Class OperationPanel [Calculator calculator]
+***Syntax End***
+***Semantics Start***
+**Class Diagrams**
+Class BInaryOperation
+	Methods:
+		execute
+		executeBinary
+Class Caculator
+	Methods:
+		addDisplyObserver
+		addMemoryObserver
+		enterDigit
+		enterOperation
+Class CalculatorFrame
+Class CalculatorTape
+	Methods:
+		update
+Class Clear
+	Methods:
+		execute
+Class Cpu
+	Methods:
+		addDisplayObserver
+		addMemoryObserver
+		clear
+		doNotify
+		enterDigit
+		enterOperation
+		equals
+		executeOperation
+		findOperation
+		getDisplayRegister
+		getMemoryRegister
+		getOperandStack
+		getOperationStack
+		initializeStates
+		loadOperand
+		pushDisplayRegister
+		pushOperation
+		replaceOperation
+		reset
+		setState
+		setUpdateDisplay
+		updateDisplay
+Class DecimalValue
+	Methods:
+		add
+		addDigit
+		create
+		divide
+		inverse
+		multiply
+		negate
+		percent
+		squareRoot
+		substract
+		toString
+Class Display
+	Methods:
+		addDigit
+		clear
+		createValue
+		reset
+		setValue
+Class DisplayPanel
+	Methods:
+		getMemoryStatus
+		setDisplay
+		update
+Class Divide
+	Methods:
+		executeBinary
+Class EnteringNumberState
+	Methods:
+		enterDigit
+		enterOperation
+		enterValue
+Class Equals
+	Methods:
+		execute
+Class FunctionPanel
+Class Inverse
+	Methods:
+		executeUnary
+Class KeyPanel
+	Methods:
+		getOperationHandler
+Class Memory
+	Methods:
+		clear
+		setValue
+Class MemoryClear
+	Methods:
+		executeMemory
+Class MemoryMinus
+	Methods:
+		executeMemory
+Class MemoryOperation
+	Methods:
+		execute
+		executeMemory
+Class MemoryPlus
+	Methods:
+		executeMemory
+Class MemoryRecall
+	Methods:
+		executeMemory
+Class MemoryStatus
+	Methods:
+		update
+Class Minus
+	Methods:
+		executeBinary
+Class Multiply
+	Methods:
+		executeBinary
+Class NumberPanel
+Class OperandCommand
+	Methods:
+		display
+		execute
+Class OperandStack
+	Methods:
+		clear
+		empty
+		op
+		peek
+		pop
+		push
+Class Operation
+	Methods:
+		getLookAhead
+		getPrecedence
+		setString
+		toString
+Class OperationCommand
+	Methods:
+		display
+		execute
+Class OperationPanel
+Class OperationStack
+	Methods:
+		clear
+		empty
+		peek
+		pop
+		push
+Class Percent
+	Methods:
+		execute
+Class Plus
+	Methods:
+		executeBinary
+Class Register
+	Methods:
+		clear
+		getValue
+		reset
+		setValue
+		setValue
+Class ReverseSign
+	Methods:
+		executeUnary
+Class Square
+	Methods:
+		executeUnary
+Class SquareRoot
+	Methods:
+		executeUnary
+Class State
+	Methods:
+		enterDigit
+		enterOperation
+		enterValue
+Class UnaryOperation
+	Methods:
+		execute
+		executeUnary
+Class Value
+Class WaitingForInputState
+	Methods:
+		enterDigit
+		enterOperation
+		enterValue
+Class WaitingForNumberState
+	Methods:
+		enterDigit
+		enterOperation
+		enterValue
+Class WaitingForOperationState
+	Methods:
+		enterDigit
+		enterOperation
+		enterValue
+**State Diagrams**
+
+**Sequence Diagrams**
+enterDigit
+Actors: |Calculator| |Cpu| |DecimalValue| |DigitHandler| |Display| |DisplayPanel| |KeyPanel| |OperandStack| |OperationStack| |Register| |WaitingForInputState| 
+ s:Calculator <-actionPerformed-> d:DigitHandler
+ s:Calculator <-enterDigit-> d:Cpu
+ d:Calculator s:KeyPanel <-enterDigit->
+ s:Cpu <-enterDigit-> d:WaitingForInputState
+ s:Cpu <-reset-> d:Display
+ s:Cpu <-clear-> d:OperandStack
+ s:Cpu <-clear-> d:OperationStack
+ d:Cpu s:WaitingForInputState <-reset->
+ d:DecimalValue s:Display <-addDigit->
+ s:DigitHandler <-getKey-> d:KeyPanel
+ s:Display <-reset-> d:Register
+ s:Display <-update-> d:DisplayPanel
+ d:Display s:WaitingForInputState <-addDigit->
+ s:DisplayPanel <-setDisplay-> d:DisplayPanelenterOperation
+Actors: |BinaryOperation| |Calculator| |CalculatorTape| |Cpu| |DecimalValue| |Display| |DisplayPanel| |EnteringNumberState| |Equals| |OperandCommand| |OperandStack| |Operation| |OperationCommand| |OperationStack| |Plus| |Register| 
+ s:BinaryOperation <-enterOperation-> d:Calculator
+ s:Calculator <-enterOperation-> d:Cpu
+ s:Cpu <-findOperation-> d:Cpu
+ s:Cpu <-enterOperation-> d:EnteringNumberState
+ d:Cpu s:EnteringNumberState <-pushDisplayRegister->
+ s:Cpu <-createValue-> d:Display
+ s:Display <-setValue-> d:Register
+ d:DecimalValue s:Register <-create->
+ s:Register <-doNotify-> d:Register
+ d:DecimalValue s:Register <-toString->
+ d:DisplayPanel s:Register <-update->
+ s:DisplayPanel <-setDisplay-> d:DisplayPanel
+ s:Display <-getValue-> d:Register
+ s:BinaryOperation <-push-> d:OperandStack
+ s:Cpu <-doNotify-> d:Cpu
+ d:CalculatorTape s:Cpu <-update->
+ s:CalculatorTape <-display-> d:OperandCommand
+ d:DecimalValue s:OperandCommand <-toString->
+ d:Cpu s:EnteringNumberState <-pushOperation->
+ s:Cpu <-empty-> d:OperationStack
+ s:Cpu <-peek-> d:OperationStack
+ s:Cpu <-getPrecedence-> d:Operation
+ s:Cpu <-getPrecedence-> d:Operation
+ s:Cpu <-pop-> d:OperationStack
+ d:BinaryOperation s:Cpu <-execute->
+ s:BinaryOperation <-getOperandStack-> d:Cpu
+ s:BinaryOperation <-pop-> d:OperandStack
+ s:BinaryOperation <-pop-> d:OperandStack
+ s:BinaryOperation <-executeBinary-> d:Plus
+ d:DecimalValue s:Plus <-add->
+ s:Cpu <-push-> d:OperandStack
+***Semantics End***
